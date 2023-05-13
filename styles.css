@@ -8,17 +8,7 @@ body {
 }
 
 .card {
-  width: 24rem;
-  height: 36rem;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-  position: relative;
-  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
-}
-
-.container-main {
-  width: 24rem;
+  width: 36rem;
   height: 36rem;
   border-radius: 10px;
   overflow: hidden;
@@ -29,6 +19,8 @@ body {
 
 h1 {
   color: #000000;
+  font-family: 'Libre Baskerville', serif;
+  padding-bottom: 20px;
   font-family: 'Signika Negative', sans-serif;
   font-size: 40px;
   line-height: 1.6;
@@ -55,7 +47,8 @@ h2 {
   text-transform: uppercase;
 }
 
-p, a {
+p,
+a {
   position: absolute;
   opacity: 0;
   max-width: 80%;
@@ -77,16 +70,19 @@ a {
   transition: inset .3s ease-out;
 }
 
-.card:hover p, .card:hover a {
+.card:hover p,
+.card:hover a {
   opacity: 1;
   transition: opacity .5s .1s ease-in;
 }
 
 button {
-  background-color: #007bff;
-  color: #fff;
+  width: 20rem;
+  background-color: #a6ffde;
+  color: rgb(56, 52, 52);
   border: none;
   padding: 10px 20px;
+  margin: 30px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 50px;
@@ -103,3 +99,18 @@ button:active {
   background-color: #004180;
   transform: scale(0.95);
 }
+
+/* Media query for mobile screens */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  .card-main {
+    width: 100%;
+    height: auto;
+  }
+
+  .container-main {
+    width: 100%;
+    height:

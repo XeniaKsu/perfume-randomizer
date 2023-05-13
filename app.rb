@@ -16,13 +16,17 @@ get '/' do
       <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/styles.css">
       </head>
       <body>
         <div class="container-main">
-        <div class="card">
+        <div class="card-main">
           <h1>Welcome to the Perfume Randomizer!</h1>
           <p>Click the button below to start.</p>
-          <div class="button" onclick="location.href='/randomizer'">Start Randomizer</div>
+          <button onclick="location.href='/randomizer'">Start Randomizer</button>
           </div>
         </div>
 
@@ -45,11 +49,14 @@ get '/randomizer' do
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="/styles.css">
       </head>
       <body>
         <div class="container">
-          <h1>Welcome to your Perfume Randomizer</h1>
+          <h1>Today you should wear:</h1>
           <h2>Can't decide what to wear? Let the randomozer do it for you.</h2>
           <div class="card">
             <img src="#{perfume['photo']}" class="card-img-top">
@@ -58,7 +65,7 @@ get '/randomizer' do
               <p class="card-text">#{perfume['description']}</p>
             </div>
           </div>
-          <div class="button" onclick="location.reload()">Randomize</div>
+          <button onclick="location.reload()">Randomize</button>
         </div>
       </body>
     </html>
