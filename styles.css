@@ -113,4 +113,6 @@ button:active {
 
   .container-main {
     width: 100%;
-    height:
+    height: auto;
+  }
+}
